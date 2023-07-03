@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+                text-align: center;
+                font-size: 30px;
+            }
+         form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                background-color: antiquewhite;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                max-width: 600px;
+                margin: 0 auto;
+                
+            }
+        form input{
+                height: 30px;
+                width: 300px;
+                outline-color: blue;
+    
+            }
+        @media only screen and (max-width: 600px){
+
+            div{
+                text-align: center;
+                font-size: 30px;
+            }
+            
+            form{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                background-color: white;
+            }
+
+            form input{
+                height: 30px;
+                width: 300px;
+                outline-color: blue;
+    
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Sign up for Flickr</p>
+    </div>
+    <form action="">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+        <input type="text" placeholder="Your age">
+        <input type="text" placeholder="Email address">
+        <input type="password" placeholder="Password">
+    </form>
+</body>
+</html>

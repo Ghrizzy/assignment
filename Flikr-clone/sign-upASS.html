@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <div>
+        <nav class="about-nav">
+            <div class="about-nav-left">
+                <img class="nav-img" src="./images/flickr-image.svg" alt="">
+            </div>
+        </nav>
+    </div>
+    
+    <div class="signup-pager" id="signup">
+        <form id="form" action="/" method="post" name="myform">
+            <p>Sign Up for Flickr</p>
+            
+            <input required  name="firstname" id="firstname" type="text" placeholder="First Name">
+            <input  name="lastname" id="lastname" type="text" placeholder="last Name">
+            <input type="number" placeholder="Age">
+            <input  name="email" type="text" placeholder="Email Address">
+            <input  name="password" type="password" placeholder="Password">
+            <input  name="confpass" type="password" placeholder="Confirm Password">
+            <p id="errormessage" class="errormessage"></p> 
+            <input  type="submit" value="SUBMIT">
+        
+
+            <!-- <button>Sign Up</button>
+            <button id="btn" style="margin: 100px;" 
+            onclick="inputSlide()">click me</button> -->
+
+            <p class="terms">By signing up, you agree with Flickr's 
+                <a href="">Terms of Services</a> and <a href="">Privacy Policy.</a> </p>
+
+            <p class="member">Already a Flickr member? <a href="">Log in here.</a></p>
+            
+        </form>
+        <div class="signup-footer">
+            <div>
+                <a href="">English</a>
+            </div>
+            <div class="">
+            <a href="">Help</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            
+        </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+<!-- <script type="text/javascript">
+//   function showbutton(){
+//     var x = document.getElementById("signup")
+//     var y = document.getElementById("btn")
+//     x.style.display = "flex"
+//     y.style.display = "none"
+
+//   }
+
+
+ 
+    var a = document.getElementsByTagName("form")
+    var b = document.getElementsByTagName("input")
+    a.innerHTML = b[0]
+    function inputSlide(){
+        var c = a.innerHTML;
+        var index = b.indexof(c)+1;
+        if(index == b.length)index = 0;
+        var result = b[index]
+        a.innerHTML = result;
+        return
+    // for (i = 0; i < b.length; i++){
+    //     a.style.display = "block"
+    //     b.style.display = b[i]
+    // }
+  }
+</script> -->
+</html>

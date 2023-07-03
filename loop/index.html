@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table></table>
+    <script>
+        const States = ["Abia", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi",
+                        "Bayelsa", "Benue", "Borno", "Cross River", "Delta",
+                        "Ebonyi", "Edo", "Ekiti", "Enugu", "Gombe", "Imo", "Jigawa",
+                        "Kaduna", "Kano", "Katsina", "Kebbi", "Kogi", "Kwara",
+                        "Lagos", "Nasarawa", "Niger", "Ogun", "Ondo", "Osun", "Oyo",
+                        "Plateau", "Rivers", "Sokoto", "Taraba", "Yobe", "Zamfara", "FCT"];
+        
+        const Capitals = ["Umuahia", "Yola", "Uyo", "Awka","Bauchi",
+                            "Yenagoa", "Makurdi", "Maiduguri", "Calabar","Asaba","Abakaliki",
+                            "Benin City", "Ado Ekiti","Enugu", "Gombe", "Owerri", "Dutse", "Kaduna",
+                            "Kano", "Katsina", "Birnin Kebbi", "Lokoja", "Ilorin", "Ikeja",
+                            "Lafia", "Minna", "Abeokuta", "Akure", "Oshogbo", "Ibadan", "Jos",
+                            "Port Harcourt", "Sokoto", "Jalingo", "Damaturu", "Gusau", "Abuja"];
+
+                            var counter = 0;
+                            document.write("<table>");
+                             States.forEach(table);
+                                function table(item){
+                                    let text = "<tr>" + "<td>" +
+                                                item +
+                                                "</td>" +
+                                                "<td>" + 
+                                                Capitals[counter]
+                                                "</td>" +
+                                                "</tr>"+"<br>"
+                                    document.write(text);
+                                    counter++
+                                } 
+                                document.write("</table>");
+
+                            // let text = "";
+                            // // let nigeria ="";
+                            // let stat = "";
+                            // States.forEach(State)
+                            // Capitals.forEach(Capital)
+
+                        //  document.write("State ------- Capitals");
+                        //  document.write("<br>")
+                
+                        // function State(item){
+                        //     nigeria += "<table>" + item +"<br>" +"</table>"
+                        // }
+                        // function Capital(item){
+                        //     stat += item + "<br>"
+                        // }
+
+                        // function myArray(){
+                        //     text += State(item) +" "+ Capital(item)
+                        // }myArray();
+
+                        // document.write(text);
+
+
+                        // const nigeria = [];
+                        // function nigeria(){
+                        //     Capitals.forEach(e2=>{document.write(Capitals)+"<br>"});
+                        //     States.forEach(e1=>{document.write(States) +"<br>"});
+                        // }nigeria();
+                        // document.write(nigeria)
+
+
+
+                        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="company()">click me</button>
+    <button onclick="third()">click pls!!!</button>
+    <button onclick="second()">click now!!!</button>
+    <div>
+        <h1 id="header"></h1>
+        <h2 class="sub-header"></h2>
+        <p></p>
+        <p></p>
+    </div>
+    <script type="text/javascript">
+        function company(){
+            var a;
+            
+            
+            a=document.getElementById("header");
+            
+            
+
+            a.innerHTML = "JAM-FORTE TECH"
+            
+            
+
+        }
+
+        function second(){
+            var b;
+            b=document.getElementsByClassName("sub-header");
+            b[0].innerHTML = "JAM-FORTE TECHNOLOGY"
+        }
+
+        function third(){
+            var c;
+            c=document.getElementsByTagName("p");
+            c[0].innerHTML = "JAM-FORTE TECH LIMITED"
+            c[1].innerHTML = "JAM-FORTE TECH LIMITED"
+        }
+    </script>
+</body>
+</html>
